@@ -1,17 +1,18 @@
 package goat.fpl.api.tests;
 
-import java.util.List;
-import java.util.Optional;
-
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-
 import goat.fpl.api.PlayerService;
 import goat.fpl.api.impl.JsonUtils;
 import goat.fpl.api.impl.PlayerServiceImpl;
 import goat.fpl.domain.player.Player;
 import goat.fpl.domain.player.PlayerHolder;
+import goat.fpl.domain.player.PlayerSummary;
+import goat.fpl.domain.player.PlayerSummaryHolder;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.List;
+import java.util.Optional;
 
 public class PlayerServiceTest {
 
@@ -36,7 +37,13 @@ public class PlayerServiceTest {
 	Optional<String> op = getPlayerService().getSpecificPlayerData(PLAYER_ID);
 	Assert.assertTrue(op.isPresent());
 
-	op.get();
+        PlayerSummaryHolder holder = JsonUtils.readValue(op.get(), PlayerSummaryHolder.class);
+        Assert.assertNotNull(holder);
+
+        List<PlayerSummary> history = holder.getHistory();
+
+        Assert.assertNotNull(history);
+        Assert.assertTrue(!history.isEmpty());
     }
 
     @Before
