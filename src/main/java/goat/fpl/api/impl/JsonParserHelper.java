@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
  *
  * @Auhor fmiskovic
  */
-public class JsonUtils {
+public class JsonParserHelper {
 
     private static final ObjectMapper OBJECT_MAPPER = initializeDeserializers();
 
@@ -38,6 +38,10 @@ public class JsonUtils {
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage(), e);
         }
+    }
+
+    private JsonParserHelper() {
+
     }
 
     private static ObjectMapper initializeDeserializers() {

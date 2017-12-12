@@ -18,6 +18,8 @@ public class Team {
 
     private int rank;
 
+    private TeamPicks teamPicks;
+
     private int total;
 
     public long getEntry() {
@@ -50,6 +52,10 @@ public class Team {
 
     public int getRank() {
         return rank;
+    }
+
+    public TeamPicks getTeamPicks() {
+        return teamPicks;
     }
 
     public int getTotal() {
@@ -86,6 +92,10 @@ public class Team {
 
     public void setRank(int rank) {
         this.rank = rank;
+    }
+
+    public void setTeamPicks(TeamPicks teamPicks) {
+        this.teamPicks = teamPicks;
     }
 
     public void setTotal(int total) {

@@ -1,7 +1,7 @@
 package goat.fpl.api.tests;
 
 import goat.fpl.api.PlayerService;
-import goat.fpl.api.impl.JsonUtils;
+import goat.fpl.api.impl.JsonParserHelper;
 import goat.fpl.api.impl.PlayerServiceImpl;
 import goat.fpl.domain.player.Player;
 import goat.fpl.domain.player.PlayerHolder;
@@ -25,8 +25,8 @@ public class PlayerServiceTest {
 	Optional<String> op = getPlayerService().getPlayersData();
 	Assert.assertTrue(op.isPresent());
 
-	PlayerHolder playerHolder = JsonUtils.readValue(op.get(), PlayerHolder.class);
-	List<Player> players = playerHolder.getElements();
+        PlayerHolder playerHolder = JsonParserHelper.readValue(op.get(), PlayerHolder.class);
+        List<Player> players = playerHolder.getElements();
 
 	Assert.assertNotNull(players);
 	Assert.assertTrue(!players.isEmpty());
@@ -37,7 +37,7 @@ public class PlayerServiceTest {
 	Optional<String> op = getPlayerService().getSpecificPlayerData(PLAYER_ID);
 	Assert.assertTrue(op.isPresent());
 
-        PlayerSummaryHolder holder = JsonUtils.readValue(op.get(), PlayerSummaryHolder.class);
+        PlayerSummaryHolder holder = JsonParserHelper.readValue(op.get(), PlayerSummaryHolder.class);
         Assert.assertNotNull(holder);
 
         List<PlayerSummary> history = holder.getHistory();
