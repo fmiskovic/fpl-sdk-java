@@ -22,7 +22,7 @@ public class URLS {
 
     public static final String BOOTSTRAP = "/bootstrap-static";
 
-    public static final String ENTRY_EVENT_PICKS = "entry/%d/event/%d/picks";
+    public static final String ENTRY_EVENT_PICKS = "/entry/%d/event/%d/picks";
 
     public static final String ENTRY_HISTORY = "/entry/%d/history";
 
