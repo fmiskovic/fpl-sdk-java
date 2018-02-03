@@ -105,7 +105,7 @@ public class DataServiceImpl implements DataService {
 		}
 		byte[] rawData = out.toByteArray();
 		Optional<byte[]> optional = Optional.of(rawData);
-		cache.putIfAbsent(path, optional);
+		cache.put(path, optional);
 		return optional;
 	    } catch (IOException e) {
 		throw new IOException(e.getMessage(), e);
