@@ -1,10 +1,9 @@
 package goat.fpl.servicei.tests;
 
+import goat.fpl.model.League;
+import goat.fpl.utils.JsonParserHelper;
 import org.junit.Assert;
 import org.junit.Test;
-
-import goat.fpl.domain.league.LeagueHolder;
-import goat.fpl.utils.JsonParserHelper;
 
 public class JsonParserHelperTest {
 
@@ -12,26 +11,26 @@ public class JsonParserHelperTest {
     public void readEmptyJsonTest() {
         String emptyJson = "{}";
 
-        LeagueHolder leagueHolder = JsonParserHelper.readValue(emptyJson, LeagueHolder.class);
+        League league = JsonParserHelper.readValue(emptyJson, League.class);
 
-        Assert.assertNotNull(leagueHolder);
+        Assert.assertNotNull(league);
     }
 
     @Test(expected = RuntimeException.class)
     public void readEmptyValueTest() {
         String emptyJson = "";
 
-        LeagueHolder leagueHolder = JsonParserHelper.readValue(emptyJson, LeagueHolder.class);
+        League league = JsonParserHelper.readValue(emptyJson, League.class);
 
-        Assert.assertNotNull(leagueHolder);
+        Assert.assertNotNull(league);
     }
 
     @Test(expected = RuntimeException.class)
     public void readNullValueTest() {
         String emptyJson = null;
 
-        LeagueHolder leagueHolder = JsonParserHelper.readValue(emptyJson, LeagueHolder.class);
+        League league = JsonParserHelper.readValue(emptyJson, League.class);
 
-        Assert.assertNotNull(leagueHolder);
+        Assert.assertNotNull(league);
     }
 }
