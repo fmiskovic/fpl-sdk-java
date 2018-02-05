@@ -1,13 +1,11 @@
 package goat.fpl.model;
 
-import java.util.List;
-
 public class EntryTransfers {
 
     private Entry entry;
-    private List<EntryTransferHistory> history;
+    private EntryTransferHistory[] history;
     private EntryLeagues leagues;
-    private List<EntryWildcard> wildcards;
+    private EntryWildcard[] wildcards;
 
     public EntryTransfers() {
 
@@ -17,7 +15,7 @@ public class EntryTransfers {
 	return entry;
     }
 
-    public List<EntryTransferHistory> getHistory() {
+    public EntryTransferHistory[] getHistory() {
 	return history;
     }
 
@@ -25,7 +23,7 @@ public class EntryTransfers {
 	return leagues;
     }
 
-    public List<EntryWildcard> getWildcards() {
+    public EntryWildcard[] getWildcards() {
 	return wildcards;
     }
 
@@ -33,7 +31,7 @@ public class EntryTransfers {
 	this.entry = entry;
     }
 
-    public void setHistory(List<EntryTransferHistory> history) {
+    public void setHistory(EntryTransferHistory[] history) {
 	this.history = history;
     }
 
@@ -41,7 +39,7 @@ public class EntryTransfers {
 	this.leagues = leagues;
     }
 
-    public void setWildcards(List<EntryWildcard> wildcards) {
+    public void setWildcards(EntryWildcard[] wildcards) {
 	this.wildcards = wildcards;
     }
 }

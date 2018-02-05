@@ -1,14 +1,12 @@
 package goat.fpl.model;
 
-import java.util.List;
-
 public class EntryPicksRoot {
 
     private String active_chip;
-    private List<EntryAutomaticSub> automatic_subs;
+    private EntryAutomaticSub[] automatic_subs;
     private EntryEvent entry_history;
     private Event event;
-    private List<EntryPick> picks;
+    private EntryPick[] picks;
 
     public EntryPicksRoot() {
 
@@ -18,7 +16,7 @@ public class EntryPicksRoot {
 	return active_chip;
     }
 
-    public List<EntryAutomaticSub> getAutomatic_subs() {
+    public EntryAutomaticSub[] getAutomatic_subs() {
 	return automatic_subs;
     }
 
@@ -30,7 +28,7 @@ public class EntryPicksRoot {
 	return event;
     }
 
-    public List<EntryPick> getPicks() {
+    public EntryPick[] getPicks() {
 	return picks;
     }
 
@@ -38,7 +36,7 @@ public class EntryPicksRoot {
 	this.active_chip = active_chip;
     }
 
-    public void setAutomatic_subs(List<EntryAutomaticSub> automatic_subs) {
+    public void setAutomatic_subs(EntryAutomaticSub[] automatic_subs) {
 	this.automatic_subs = automatic_subs;
     }
 
@@ -50,7 +48,7 @@ public class EntryPicksRoot {
 	this.event = event;
     }
 
-    public void setPicks(List<EntryPick> picks) {
+    public void setPicks(EntryPick[] picks) {
 	this.picks = picks;
     }
 }

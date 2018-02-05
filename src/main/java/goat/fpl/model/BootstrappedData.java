@@ -1,36 +1,33 @@
 package goat.fpl.model;
 
-import java.util.List;
-
 public class BootstrappedData {
 
     private int current_event;
-    private List<ElementType> element_types;
-    private List<Element> elements;
-    private List<Event> events;
+    private ElementType[] element_types;
+    private Element[] elements;
+    private Event[] events;
     private int last_entry_event;
     private int next_event;
-    private List<Phase> phases;
-    private List<Team> teams;
+    private Phase[] phases;
+    private Team[] teams;
     private long total_players;
 
     public BootstrappedData() {
     }
 
     public int getCurrent_event() {
-
 	return current_event;
     }
 
-    public List<ElementType> getElement_types() {
+    public ElementType[] getElement_types() {
 	return element_types;
     }
 
-    public List<Element> getElements() {
+    public Element[] getElements() {
 	return elements;
     }
 
-    public List<Event> getEvents() {
+    public Event[] getEvents() {
 	return events;
     }
 
@@ -42,11 +39,11 @@ public class BootstrappedData {
 	return next_event;
     }
 
-    public List<Phase> getPhases() {
+    public Phase[] getPhases() {
 	return phases;
     }
 
-    public List<Team> getTeams() {
+    public Team[] getTeams() {
 	return teams;
     }
 
@@ -58,15 +55,15 @@ public class BootstrappedData {
 	this.current_event = current_event;
     }
 
-    public void setElement_types(List<ElementType> element_types) {
+    public void setElement_types(ElementType[] element_types) {
 	this.element_types = element_types;
     }
 
-    public void setElements(List<Element> elements) {
+    public void setElements(Element[] elements) {
 	this.elements = elements;
     }
 
-    public void setEvents(List<Event> events) {
+    public void setEvents(Event[] events) {
 	this.events = events;
     }
 
@@ -78,11 +75,11 @@ public class BootstrappedData {
 	this.next_event = next_event;
     }
 
-    public void setPhases(List<Phase> phases) {
+    public void setPhases(Phase[] phases) {
 	this.phases = phases;
     }
 
-    public void setTeams(List<Team> teams) {
+    public void setTeams(Team[] teams) {
 	this.teams = teams;
     }
 

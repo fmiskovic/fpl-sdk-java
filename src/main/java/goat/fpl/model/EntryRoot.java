@@ -1,20 +1,18 @@
 package goat.fpl.model;
 
-import java.util.List;
-
 public class EntryRoot {
 
-    private List<EntryChip> chips;
+    private EntryChip[] chips;
     private Entry entry;
-    private List<EntryEvent> history;
+    private EntryEvent[] history;
     private EntryLeagues leagues;
-    private List<EntrySeason> season;
+    private EntrySeason[] season;
 
     public EntryRoot() {
 
     }
 
-    public List<EntryChip> getChips() {
+    public EntryChip[] getChips() {
 	return chips;
     }
 
@@ -22,7 +20,7 @@ public class EntryRoot {
 	return entry;
     }
 
-    public List<EntryEvent> getHistory() {
+    public EntryEvent[] getHistory() {
 	return history;
     }
 
@@ -30,11 +28,11 @@ public class EntryRoot {
 	return leagues;
     }
 
-    public List<EntrySeason> getSeason() {
+    public EntrySeason[] getSeason() {
 	return season;
     }
 
-    public void setChips(List<EntryChip> chips) {
+    public void setChips(EntryChip[] chips) {
 	this.chips = chips;
     }
 
@@ -42,7 +40,7 @@ public class EntryRoot {
 	this.entry = entry;
     }
 
-    public void setHistory(List<EntryEvent> history) {
+    public void setHistory(EntryEvent[] history) {
 	this.history = history;
     }
 
@@ -50,7 +48,7 @@ public class EntryRoot {
 	this.leagues = leagues;
     }
 
-    public void setSeason(List<EntrySeason> season) {
+    public void setSeason(EntrySeason[] season) {
 	this.season = season;
     }
 }

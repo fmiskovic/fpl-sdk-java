@@ -1,5 +1,8 @@
 package goat.fpl.service;
 
+import java.io.IOException;
+import java.util.Optional;
+
 import goat.fpl.model.BootstrappedData;
 import goat.fpl.model.EntryPicksRoot;
 import goat.fpl.model.EntryRoot;
@@ -7,18 +10,23 @@ import goat.fpl.model.EntryTransfers;
 import goat.fpl.model.LeagueRoot;
 import goat.fpl.model.LiveEvent;
 
-import java.io.IOException;
-import java.util.Optional;
-
+/**
+ * This is like some helper service and it is not designed to be used directly
+ * but from other services like {@link EntryService}.
+ *
+ * @Author Filip Miskovic
+ */
 public interface DataService {
 
     /**
-     * By calling this method you can get data for single fpl team in single game week.
-     * Data could be active chips, points, player picks etc.
-     * This is useful to get live data for some fpl team.
+     * By calling this method you can get data for single fpl team in single game
+     * week. Data could be active chips, points, player picks etc. This is useful to
+     * get live data for some fpl team.
      *
-     * @param entryId     ID of fantasy team.
-     * @param eventNumber Game week number.
+     * @param entryId
+     *            ID of fantasy team.
+     * @param eventNumber
+     *            Game week number.
      * @return POJO EntryPicksRoot parsed from json data.
      * @throws IOException
      */
@@ -46,16 +54,19 @@ public interface DataService {
     Optional<EntryTransfers> findEntryTransfers(long entryId) throws IOException;
 
     /**
-     * By calling this method you can get data for specified league.
-     * Usually it is classic league, but i think it can be Overall.
-     * Available data is for example league name, league id,
-     * standings which is entry ranking for that league, etc.
+     * By calling this method you can get data for specified league. Usually it is
+     * classic league, but i think it can be Overall. Available data is for example
+     * league name, league id, standings which is entry ranking for that league,
+     * etc.
      *
      * @param leagueId
-     * @param page     Single page of 50 entries.
-     *                 Some leagues can have more than 50 teams, so you must use pagination.
-     * @param phase    Phase could be by month (August, September etc) or Overall.
-     *                 1 = Overall, 2 = August, 3 = September etc.
+     *            ID of fpl league.
+     * @param page
+     *            Single page of 50 entries. Some leagues can have more than 50
+     *            teams, so you must use pagination.
+     * @param phase
+     *            Phase could be by month (August, September etc) or Overall. 1 =
+     *            Overall, 2 = August, 3 = September etc.
      * @return POJO LeagueRoot parsed from json data.
      * @throws IOException
      */
