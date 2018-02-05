@@ -66,8 +66,10 @@ public class DataServiceImpl implements DataService {
     }
 
     public Optional<LiveEvent> findLiveEvent(long eventNumber) throws IOException {
-	// TODO:implement
-	return null;
+	String path = String.format(URLS.EVENT_LIVE, eventNumber);
+	Optional<byte[]> data = fetchData(path);
+	return data.isPresent() ? Optional.of(JsonParserHelper.readValue(data.get(), LiveEvent.class))
+		: Optional.empty();
     }
 
     public Optional<BootstrappedData> getBootstrapData() throws IOException {
