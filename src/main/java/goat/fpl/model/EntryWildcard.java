@@ -17,58 +17,58 @@ public class EntryWildcard {
 
     public int getChip() {
 
-	return chip;
-    }
-
-    public long getEntry() {
-	return entry;
-    }
-
-    public int getEvent() {
-	return event;
-    }
-
-    public String getName() {
-	return name;
-    }
-
-    public String getPlayed_time_formatted() {
-	return played_time_formatted;
-    }
-
-    public String getStatus() {
-	return status;
-    }
-
-    public Date getTime() {
-	return time;
+        return chip;
     }
 
     public void setChip(int chip) {
-	this.chip = chip;
+        this.chip = chip;
+    }
+
+    public long getEntry() {
+        return entry;
     }
 
     public void setEntry(long entry) {
-	this.entry = entry;
+        this.entry = entry;
+    }
+
+    public int getEvent() {
+        return event;
     }
 
     public void setEvent(int event) {
-	this.event = event;
+        this.event = event;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
-	this.name = name;
+        this.name = name;
+    }
+
+    public String getPlayed_time_formatted() {
+        return played_time_formatted;
     }
 
     public void setPlayed_time_formatted(String played_time_formatted) {
-	this.played_time_formatted = played_time_formatted;
+        this.played_time_formatted = played_time_formatted;
+    }
+
+    public String getStatus() {
+        return status;
     }
 
     public void setStatus(String status) {
-	this.status = status;
+        this.status = status;
+    }
+
+    public Date getTime() {
+        return time;
     }
 
     public void setTime(Date time) {
-	this.time = time;
+        this.time = time;
     }
 }

@@ -13,42 +13,42 @@ public class EntryPick {
 
     public long getElement() {
 
-	return element;
-    }
-
-    public int getMultiplier() {
-	return multiplier;
-    }
-
-    public int getPosition() {
-	return position;
-    }
-
-    public boolean isIs_captain() {
-	return is_captain;
-    }
-
-    public boolean isIs_vice_captain() {
-	return is_vice_captain;
+        return element;
     }
 
     public void setElement(long element) {
-	this.element = element;
+        this.element = element;
     }
 
-    public void setIs_captain(boolean is_captain) {
-	this.is_captain = is_captain;
-    }
-
-    public void setIs_vice_captain(boolean is_vice_captain) {
-	this.is_vice_captain = is_vice_captain;
+    public int getMultiplier() {
+        return multiplier;
     }
 
     public void setMultiplier(int multiplier) {
-	this.multiplier = multiplier;
+        this.multiplier = multiplier;
+    }
+
+    public int getPosition() {
+        return position;
     }
 
     public void setPosition(int position) {
-	this.position = position;
+        this.position = position;
+    }
+
+    public boolean isIs_captain() {
+        return is_captain;
+    }
+
+    public void setIs_captain(boolean is_captain) {
+        this.is_captain = is_captain;
+    }
+
+    public boolean isIs_vice_captain() {
+        return is_vice_captain;
+    }
+
+    public void setIs_vice_captain(boolean is_vice_captain) {
+        this.is_vice_captain = is_vice_captain;
     }
 }

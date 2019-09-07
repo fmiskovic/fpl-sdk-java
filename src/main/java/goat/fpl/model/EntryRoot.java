@@ -13,42 +13,42 @@ public class EntryRoot {
     }
 
     public EntryChip[] getChips() {
-	return chips;
-    }
-
-    public Entry getEntry() {
-	return entry;
-    }
-
-    public EntryEvent[] getHistory() {
-	return history;
-    }
-
-    public EntryLeagues getLeagues() {
-	return leagues;
-    }
-
-    public EntrySeason[] getSeason() {
-	return season;
+        return chips;
     }
 
     public void setChips(EntryChip[] chips) {
-	this.chips = chips;
+        this.chips = chips;
+    }
+
+    public Entry getEntry() {
+        return entry;
     }
 
     public void setEntry(Entry entry) {
-	this.entry = entry;
+        this.entry = entry;
+    }
+
+    public EntryEvent[] getHistory() {
+        return history;
     }
 
     public void setHistory(EntryEvent[] history) {
-	this.history = history;
+        this.history = history;
+    }
+
+    public EntryLeagues getLeagues() {
+        return leagues;
     }
 
     public void setLeagues(EntryLeagues leagues) {
-	this.leagues = leagues;
+        this.leagues = leagues;
+    }
+
+    public EntrySeason[] getSeason() {
+        return season;
     }
 
     public void setSeason(EntrySeason[] season) {
-	this.season = season;
+        this.season = season;
     }
 }

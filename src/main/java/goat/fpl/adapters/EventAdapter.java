@@ -1,21 +1,20 @@
-package goat.fpl.service;
+package goat.fpl.adapters;
+
+import goat.fpl.model.Event;
+import goat.fpl.model.EventElements;
 
 import java.io.IOException;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import goat.fpl.model.Event;
-import goat.fpl.model.EventElements;
-
-public interface EventService {
+public interface EventAdapter {
 
     /**
      * Returns all element data for a specified event
      *
-     * @param event
-     *            The event number
+     * @param event The event number
      */
-    Optional<EventElements> findElementsByEvent(int event) throws IOException;
+    Optional<EventElements> findElementsByEvent(int event) throws IOException, InterruptedException;
 
     /**
      * Returns the current event number

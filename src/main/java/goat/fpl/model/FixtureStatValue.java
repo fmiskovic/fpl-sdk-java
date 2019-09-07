@@ -9,19 +9,19 @@ public class FixtureStatValue {
     }
 
     public long getElement() {
-	return element;
+        return element;
+    }
+
+    public void setElement(long element) {
+        this.element = element;
     }
 
     public int getValue() {
 
-	return value;
-    }
-
-    public void setElement(long element) {
-	this.element = element;
+        return value;
     }
 
     public void setValue(int value) {
-	this.value = value;
+        this.value = value;
     }
 }

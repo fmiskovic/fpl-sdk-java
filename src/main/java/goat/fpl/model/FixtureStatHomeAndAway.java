@@ -12,18 +12,18 @@ public class FixtureStatHomeAndAway {
 
     public List<FixtureStatValue> getA() {
 
-	return a;
-    }
-
-    public List<FixtureStatValue> getH() {
-	return h;
+        return a;
     }
 
     public void setA(List<FixtureStatValue> a) {
-	this.a = a;
+        this.a = a;
+    }
+
+    public List<FixtureStatValue> getH() {
+        return h;
     }
 
     public void setH(List<FixtureStatValue> h) {
-	this.h = h;
+        this.h = h;
     }
 }

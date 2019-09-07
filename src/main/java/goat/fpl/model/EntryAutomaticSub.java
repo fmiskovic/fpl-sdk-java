@@ -12,43 +12,43 @@ public class EntryAutomaticSub {
     }
 
     public long getElement_in() {
-	return element_in;
+        return element_in;
+    }
+
+    public void setElement_in(long element_in) {
+        this.element_in = element_in;
     }
 
     public long getElement_out() {
-	return element_out;
+        return element_out;
+    }
+
+    public void setElement_out(long element_out) {
+        this.element_out = element_out;
     }
 
     public long getEntry() {
-	return entry;
+        return entry;
+    }
+
+    public void setEntry(long entry) {
+        this.entry = entry;
     }
 
     public long getEvent() {
-	return event;
+        return event;
+    }
+
+    public void setEvent(long event) {
+        this.event = event;
     }
 
     public long getId() {
 
-	return id;
-    }
-
-    public void setElement_in(long element_in) {
-	this.element_in = element_in;
-    }
-
-    public void setElement_out(long element_out) {
-	this.element_out = element_out;
-    }
-
-    public void setEntry(long entry) {
-	this.entry = entry;
-    }
-
-    public void setEvent(long event) {
-	this.event = event;
+        return id;
     }
 
     public void setId(long id) {
-	this.id = id;
+        this.id = id;
     }
 }

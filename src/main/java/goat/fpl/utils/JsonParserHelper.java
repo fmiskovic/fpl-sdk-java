@@ -16,6 +16,10 @@ public class JsonParserHelper {
 
     private static final ObjectMapper OBJECT_MAPPER = initializeDeserializers();
 
+    private JsonParserHelper() {
+
+    }
+
     public static <T> T readValue(byte[] jsonAsBytes, Class<T> expectedType) {
         try {
             return OBJECT_MAPPER.readValue(jsonAsBytes, expectedType);
@@ -38,10 +42,6 @@ public class JsonParserHelper {
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage(), e);
         }
-    }
-
-    private JsonParserHelper() {
-
     }
 
     private static ObjectMapper initializeDeserializers() {

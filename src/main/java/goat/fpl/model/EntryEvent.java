@@ -23,122 +23,122 @@ public class EntryEvent {
     }
 
     public float getBank() {
-	return bank;
-    }
-
-    public long getEntry() {
-	return entry;
-    }
-
-    public int getEvent() {
-	return event;
-    }
-
-    public int getEvent_transfers() {
-	return event_transfers;
-    }
-
-    public float getEvent_transfers_cost() {
-	return event_transfers_cost;
-    }
-
-    public long getId() {
-	return id;
-    }
-
-    public String getMovement() {
-	return movement;
-    }
-
-    public long getOverall_rank() {
-	return overall_rank;
-    }
-
-    public int getPoints() {
-	return points;
-    }
-
-    public int getPoints_on_bench() {
-	return points_on_bench;
-    }
-
-    public long getRank() {
-	return rank;
-    }
-
-    public long getRank_sort() {
-	return rank_sort;
-    }
-
-    public Object getTargets() {
-	return targets;
-    }
-
-    public long getTotal_points() {
-	return total_points;
-    }
-
-    public long getValue() {
-	return value;
+        return bank;
     }
 
     public void setBank(float bank) {
-	this.bank = bank;
+        this.bank = bank;
+    }
+
+    public long getEntry() {
+        return entry;
     }
 
     public void setEntry(long entry) {
-	this.entry = entry;
+        this.entry = entry;
+    }
+
+    public int getEvent() {
+        return event;
     }
 
     public void setEvent(int event) {
-	this.event = event;
+        this.event = event;
+    }
+
+    public int getEvent_transfers() {
+        return event_transfers;
     }
 
     public void setEvent_transfers(int event_transfers) {
-	this.event_transfers = event_transfers;
+        this.event_transfers = event_transfers;
+    }
+
+    public float getEvent_transfers_cost() {
+        return event_transfers_cost;
     }
 
     public void setEvent_transfers_cost(float event_transfers_cost) {
-	this.event_transfers_cost = event_transfers_cost;
+        this.event_transfers_cost = event_transfers_cost;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public void setId(long id) {
-	this.id = id;
+        this.id = id;
+    }
+
+    public String getMovement() {
+        return movement;
     }
 
     public void setMovement(String movement) {
-	this.movement = movement;
+        this.movement = movement;
+    }
+
+    public long getOverall_rank() {
+        return overall_rank;
     }
 
     public void setOverall_rank(long overall_rank) {
-	this.overall_rank = overall_rank;
+        this.overall_rank = overall_rank;
+    }
+
+    public int getPoints() {
+        return points;
     }
 
     public void setPoints(int points) {
-	this.points = points;
+        this.points = points;
+    }
+
+    public int getPoints_on_bench() {
+        return points_on_bench;
     }
 
     public void setPoints_on_bench(int points_on_bench) {
-	this.points_on_bench = points_on_bench;
+        this.points_on_bench = points_on_bench;
+    }
+
+    public long getRank() {
+        return rank;
     }
 
     public void setRank(long rank) {
-	this.rank = rank;
+        this.rank = rank;
+    }
+
+    public long getRank_sort() {
+        return rank_sort;
     }
 
     public void setRank_sort(long rank_sort) {
-	this.rank_sort = rank_sort;
+        this.rank_sort = rank_sort;
+    }
+
+    public Object getTargets() {
+        return targets;
     }
 
     public void setTargets(Object targets) {
-	this.targets = targets;
+        this.targets = targets;
+    }
+
+    public long getTotal_points() {
+        return total_points;
     }
 
     public void setTotal_points(long total_points) {
-	this.total_points = total_points;
+        this.total_points = total_points;
+    }
+
+    public long getValue() {
+        return value;
     }
 
     public void setValue(long value) {
-	this.value = value;
+        this.value = value;
     }
 }

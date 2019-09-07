@@ -8,10 +8,10 @@ public class EventElements {
     private Map<Long, ElementStats> stats;
 
     public Map<Long, ElementStats> getStats() {
-	return stats;
+        return stats;
     }
 
     public void setStats(Map<Long, ElementStats> stats) {
-	this.stats = stats;
+        this.stats = stats;
     }
 }

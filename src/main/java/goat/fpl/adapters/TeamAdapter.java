@@ -1,11 +1,11 @@
-package goat.fpl.service;
+package goat.fpl.adapters;
+
+import goat.fpl.model.Team;
 
 import java.io.IOException;
 import java.util.stream.Stream;
 
-import goat.fpl.model.Team;
-
-public interface TeamService {
+public interface TeamAdapter {
 
     /**
      * Returns a collection of all teams

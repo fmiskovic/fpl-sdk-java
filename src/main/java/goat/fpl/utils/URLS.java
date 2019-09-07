@@ -31,5 +31,6 @@ public class URLS {
     public static final String LEAGUE = "/leagues-classic-standings/%d?phase=%d&le-page=%d&ls-page=%d";
 
     public static final String EVENT_LIVE = "/event/%d/live";
+
     public static final String PLAYER_SUM = "/element-summary/%d";
 }

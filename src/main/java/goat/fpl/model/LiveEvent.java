@@ -6,18 +6,18 @@ public class LiveEvent {
     private Fixture[] fixtures;
 
     public EventElements getElements() {
-	return elements;
-    }
-
-    public Fixture[] getFixtures() {
-	return fixtures;
+        return elements;
     }
 
     public void setElements(EventElements elements) {
-	this.elements = elements;
+        this.elements = elements;
+    }
+
+    public Fixture[] getFixtures() {
+        return fixtures;
     }
 
     public void setFixtures(Fixture[] fixtures) {
-	this.fixtures = fixtures;
+        this.fixtures = fixtures;
     }
 }

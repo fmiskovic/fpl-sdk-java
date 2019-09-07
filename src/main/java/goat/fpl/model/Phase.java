@@ -12,39 +12,39 @@ public class Phase {
     }
 
     public long getId() {
-	return id;
-    }
-
-    public String getName() {
-	return name;
-    }
-
-    public long getStart_event() {
-	return start_event;
-    }
-
-    public long getStop_event() {
-	return stop_event;
+        return id;
     }
 
     public void setId(long id) {
-	this.id = id;
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
-	this.name = name;
+        this.name = name;
+    }
+
+    public long getStart_event() {
+        return start_event;
     }
 
     public void setStart_event(long start_event) {
-	this.start_event = start_event;
+        this.start_event = start_event;
+    }
+
+    public long getStop_event() {
+        return stop_event;
     }
 
     public void setStop_event(long stop_event) {
-	this.stop_event = stop_event;
+        this.stop_event = stop_event;
     }
 
     @Override
     public String toString() {
-	return "Phase{" + "id=" + id + ", name='" + name + '\'' + '}';
+        return "Phase{" + "id=" + id + ", name='" + name + '\'' + '}';
     }
 }

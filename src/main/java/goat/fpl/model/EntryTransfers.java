@@ -12,34 +12,34 @@ public class EntryTransfers {
     }
 
     public Entry getEntry() {
-	return entry;
-    }
-
-    public EntryTransferHistory[] getHistory() {
-	return history;
-    }
-
-    public EntryLeagues getLeagues() {
-	return leagues;
-    }
-
-    public EntryWildcard[] getWildcards() {
-	return wildcards;
+        return entry;
     }
 
     public void setEntry(Entry entry) {
-	this.entry = entry;
+        this.entry = entry;
+    }
+
+    public EntryTransferHistory[] getHistory() {
+        return history;
     }
 
     public void setHistory(EntryTransferHistory[] history) {
-	this.history = history;
+        this.history = history;
+    }
+
+    public EntryLeagues getLeagues() {
+        return leagues;
     }
 
     public void setLeagues(EntryLeagues leagues) {
-	this.leagues = leagues;
+        this.leagues = leagues;
+    }
+
+    public EntryWildcard[] getWildcards() {
+        return wildcards;
     }
 
     public void setWildcards(EntryWildcard[] wildcards) {
-	this.wildcards = wildcards;
+        this.wildcards = wildcards;
     }
 }
