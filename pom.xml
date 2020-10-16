@@ -2,17 +2,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>goat.fpl</groupId>
-    <artifactId>goat-fpl-api</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <groupId>fpl.sdk</groupId>
+    <artifactId>fpl-sdk-java</artifactId>
+    <version>3.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>goat-fpl-api</name>
+    <name>fpl-sdk-java</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.11.3</jackson.version>
+        <vavr.version>0.10.3</vavr.version>
     </properties>
 
     <dependencies>
@@ -33,7 +34,13 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>[2.9.9.2,)</version>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>${vavr.version}</version>
         </dependency>
 
     </dependencies>
