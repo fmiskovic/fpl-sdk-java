@@ -4,15 +4,12 @@ import java.util.List;
 
 public class LiveEvent {
 
-    private EventElements elements;
+    private List<EventElements> elements;
 
-    private List<Fixture> fixtures;
-
-    public EventElements getElements() {
-        return elements;
+    public LiveEvent() {
     }
 
-    public List<Fixture> getFixtures() {
-        return fixtures;
+    public List<EventElements> getElements() {
+        return elements;
     }
 }

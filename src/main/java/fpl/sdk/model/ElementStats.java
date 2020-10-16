@@ -10,17 +10,17 @@ public class ElementStats {
 
     private int clean_sheets;
 
-    private int creativity;
+    private float creativity;
 
     private int goals_conceded;
 
     private int goals_scored;
 
-    private int ict_index;
+    private float ict_index;
 
     private boolean in_dreamteam;
 
-    private int influence;
+    private float influence;
 
     private int minutes;
 
@@ -34,7 +34,7 @@ public class ElementStats {
 
     private int saves;
 
-    private int threat;
+    private float threat;
 
     private int total_points;
 
@@ -60,7 +60,7 @@ public class ElementStats {
         return clean_sheets;
     }
 
-    public int getCreativity() {
+    public float getCreativity() {
         return creativity;
     }
 
@@ -72,7 +72,7 @@ public class ElementStats {
         return goals_scored;
     }
 
-    public int getIct_index() {
+    public float getIct_index() {
         return ict_index;
     }
 
@@ -80,7 +80,7 @@ public class ElementStats {
         return in_dreamteam;
     }
 
-    public int getInfluence() {
+    public float getInfluence() {
         return influence;
     }
 
@@ -108,7 +108,7 @@ public class ElementStats {
         return saves;
     }
 
-    public int getThreat() {
+    public float getThreat() {
         return threat;
     }
 

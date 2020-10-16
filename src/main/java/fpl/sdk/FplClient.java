@@ -243,9 +243,9 @@ public class FplClient {
      * @param event The event number
      * @return POJO {@link EventElements} parsed from json data.
      */
-    public Optional<EventElements> findElementsByEvent(int event) {
+    public Stream<EventElements> findElementsByEvent(int event) {
         Optional<LiveEvent> liveEvent = findLiveEvent(event);
-        return liveEvent.map(LiveEvent::getElements);
+        return liveEvent.stream().flatMap(live->live.getElements().stream());
     }
 
     /**
